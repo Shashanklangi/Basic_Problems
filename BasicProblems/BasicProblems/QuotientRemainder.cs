@@ -24,4 +24,5 @@ namespace BasicProblems
             Console.WriteLine("Remainder is : " + remainder);
         }
     }
+
 }
