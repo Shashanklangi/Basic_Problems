@@ -18,6 +18,7 @@ namespace BasicProblems
             Console.WriteLine("6 Swap Numbers.");
             Console.WriteLine("7 Power of 2.");
             Console.WriteLine("8 Vowels.");
+            Console.WriteLine("9 Prime factorisation.");
 
             int problem = Convert.ToInt32(Console.ReadLine());
             Program basic = new Program();
@@ -55,8 +56,12 @@ namespace BasicProblems
                     Vowels vowels = new Vowels();
                     vowels.VowelsProgram();
                     break;
+                case 9:
+                    Factor factor = new Factor();
+                    factor.FactorsProgram();
+                    break;
                 default:
-                    Console.WriteLine("Input is invalid,Enter the number from 1 to 8");
+                    Console.WriteLine("Input is invalid,Enter the number from 1 to 9");
                     break;
 
             }
