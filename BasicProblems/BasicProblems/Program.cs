@@ -17,6 +17,7 @@ namespace BasicProblems
             Console.WriteLine("5 Leap Year");
             Console.WriteLine("6 Swap Numbers.");
             Console.WriteLine("7 Power of 2.");
+            Console.WriteLine("8 Vowels.");
 
             int problem = Convert.ToInt32(Console.ReadLine());
             Program basic = new Program();
@@ -50,8 +51,12 @@ namespace BasicProblems
                     Power power = new Power();
                     power.PowerProgram();
                     break;
+                case 8:
+                    Vowels vowels = new Vowels();
+                    vowels.VowelsProgram();
+                    break;
                 default:
-                    Console.WriteLine("Input is invalid,Enter the number from 1 to 7");
+                    Console.WriteLine("Input is invalid,Enter the number from 1 to 8");
                     break;
 
             }
