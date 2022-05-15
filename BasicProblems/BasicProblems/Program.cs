@@ -14,6 +14,7 @@ namespace BasicProblems
             Console.WriteLine("2 Even and Odd Number.");
             Console.WriteLine("3 Harmonic Number.");
             Console.WriteLine("4 Flip Coin.");
+            Console.WriteLine("5 Leap Year");
 
             int problem = Convert.ToInt32(Console.ReadLine());
             Program basic = new Program();
@@ -35,8 +36,12 @@ namespace BasicProblems
                     FlipCoin coin = new FlipCoin();
                     coin.FlipCoinProgram();
                     break;
+                case 5:
+                    LeapYear leap = new LeapYear();
+                    leap.leapyearProgram();
+                    break;
                 default:
-                    Console.WriteLine("Input is invalid,Enter the number from 1 to 4");
+                    Console.WriteLine("Input is invalid,Enter the number from 1 to 5");
                     break;
 
             }
