@@ -19,6 +19,7 @@ namespace BasicProblems
             Console.WriteLine("7 Power of 2.");
             Console.WriteLine("8 Vowels.");
             Console.WriteLine("9 Prime factorisation.");
+            Console.WriteLine("10 Compute Quotient and Remainder.");
 
             int problem = Convert.ToInt32(Console.ReadLine());
             Program basic = new Program();
@@ -60,8 +61,12 @@ namespace BasicProblems
                     Factor factor = new Factor();
                     factor.FactorsProgram();
                     break;
+                case 10:
+                    QuotientRemainder quotientRemainder = new QuotientRemainder();
+                    quotientRemainder.ComputeProgram();
+                    break;
                 default:
-                    Console.WriteLine("Input is invalid,Enter the number from 1 to 9");
+                    Console.WriteLine("Input is invalid,Enter the number from 1 to 10");
                     break;
 
             }
