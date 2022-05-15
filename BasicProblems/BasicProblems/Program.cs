@@ -16,6 +16,7 @@ namespace BasicProblems
             Console.WriteLine("4 Flip Coin.");
             Console.WriteLine("5 Leap Year");
             Console.WriteLine("6 Swap Numbers.");
+            Console.WriteLine("7 Power of 2.");
 
             int problem = Convert.ToInt32(Console.ReadLine());
             Program basic = new Program();
@@ -45,8 +46,12 @@ namespace BasicProblems
                     SwapNumber swap = new SwapNumber();
                     swap.SwapNumberProgram();
                     break;
+                case 7:
+                    Power power = new Power();
+                    power.PowerProgram();
+                    break;
                 default:
-                    Console.WriteLine("Input is invalid,Enter the number from 1 to 6");
+                    Console.WriteLine("Input is invalid,Enter the number from 1 to 7");
                     break;
 
             }
