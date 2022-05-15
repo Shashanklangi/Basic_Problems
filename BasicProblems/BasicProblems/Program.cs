@@ -15,6 +15,7 @@ namespace BasicProblems
             Console.WriteLine("3 Harmonic Number.");
             Console.WriteLine("4 Flip Coin.");
             Console.WriteLine("5 Leap Year");
+            Console.WriteLine("6 Swap Numbers.");
 
             int problem = Convert.ToInt32(Console.ReadLine());
             Program basic = new Program();
@@ -40,8 +41,12 @@ namespace BasicProblems
                     LeapYear leap = new LeapYear();
                     leap.leapyearProgram();
                     break;
+                case 6:
+                    SwapNumber swap = new SwapNumber();
+                    swap.SwapNumberProgram();
+                    break;
                 default:
-                    Console.WriteLine("Input is invalid,Enter the number from 1 to 5");
+                    Console.WriteLine("Input is invalid,Enter the number from 1 to 6");
                     break;
 
             }
