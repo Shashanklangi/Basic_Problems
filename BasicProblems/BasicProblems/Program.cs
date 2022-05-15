@@ -13,6 +13,7 @@ namespace BasicProblems
             Console.WriteLine("1 Largest Number.");
             Console.WriteLine("2 Even and Odd Number.");
             Console.WriteLine("3 Harmonic Number.");
+            Console.WriteLine("4 Flip Coin.");
 
             int problem = Convert.ToInt32(Console.ReadLine());
             Program basic = new Program();
@@ -30,8 +31,12 @@ namespace BasicProblems
                     Harmonic harmonic = new Harmonic();
                     harmonic.HarmonicProgram();
                     break;
+                case 4:
+                    FlipCoin coin = new FlipCoin();
+                    coin.FlipCoinProgram();
+                    break;
                 default:
-                    Console.WriteLine("Input is invalid,Enter the number from 1 to 3");
+                    Console.WriteLine("Input is invalid,Enter the number from 1 to 4");
                     break;
 
             }
